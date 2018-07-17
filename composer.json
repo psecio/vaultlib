@@ -1,0 +1,32 @@
+{
+    "name":"psecio/vaultlib",
+    "type":"library",
+    "description":"A PHP library for interacting with a Vault secrets store",
+    "keywords":["vaile", "secret", "api", "client"],
+    "homepage":"https://github.com/psecio/vaultlib.git",
+    "license":"MIT",
+    "authors":[
+        {
+            "name":"Chris Cornutt",
+            "email":"ccornutt@phpdeveloper.org",
+            "homepage":"http://www.phpdeveloper.org/"
+        }
+    ],
+    "autoload":{
+        "psr-4":{
+            "Psecio\\Vaultlib\\":"src/"
+        }
+    },
+    "autoload-dev":{
+        "psr-4":{
+            "Psecio\\Vaultlib\\":"tests/"
+        }
+    },
+    "require":{
+        "php": "^7.1",
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.1"
+    }
+}
